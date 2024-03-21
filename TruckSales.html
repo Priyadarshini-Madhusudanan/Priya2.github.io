@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Priyadarshini Madhusudanan</title>
+    <link rel="shortcut icon" href="img/a-icon.ico" />
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll"  href="index.html">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section class="bg-custom" id="about">
+	<style>
+    .bg-custom {
+        background-color: #046C95; /* Light blue color code */
+    }
+	</style>
+	<div class="col-lg-8 text-center" style="text-align: left; color: #ffffff;">
+    <!-- <hr class="light"> -->
+    <h2 style="font-style: italic">Forecasting of Truck Sales</h2>
+    <h4 style="text-decoration: underline;">OBJECTIVE</h4>
+    <p class="text-faded" style="font-size: small;">
+    Conduct time series analysis on truck sales data spanning from January 2003 to December 2014. The objective is to forecast truck sales for 24 periods into the future (2015 and 2016) using various time series forecasting models.</p>
+    <h4 style="text-decoration: underline;">DATA</h4>
+    <p class="text-faded" style="font-size: small;">
+     The dataset comprises monthly records of truck sales from January 2003 to December 2014, providing a total of 144 observations. The dataset is structured for time series analysis, enabling a thorough exploration of temporal patterns and trends in truck sales.</p>
+    <h4 style="text-decoration: underline;">DATA PARTITIONING</h4>
+    <p class="text-faded" style="font-size: small;">
+    Data Partitioning: The dataset was divided into distinct training (January 2003 to December 2012) and validation (January 2013 to December 2014) periods to facilitate robust analysis.</p>
+	<h4 style="text-decoration: underline;">EXPLORATION & VISUALIZATION</h4>
+    <p class="text-faded" style="font-size: small;">
+        <ul class="text-faded" style="font-size: small;">
+            <li>Time Series Components: Visual inspection revealed an upward trend with additive seasonality in truck sales.</li>
+            <li>Autocorrelation Analysis: Positive and statistically significant autocorrelation at various lags highlighted the presence of monthly seasonality in the dataset.</li>
+        </ul>
+    </p>
+    <h4 style="text-decoration: underline;">FORECASTING MODELS</h4>
+    <p class="text-faded" style="font-size: small;">
+        <ul class="text-faded" style="font-size: small;">
+            <li>Two-level forecasting using regression model with linear trend and seasonality along with trailing moving average (k = 4)</li>
+            <li>Holt-Winter’s Model</li>
+            <li>Quadratic trend and seasonality model</li>
+            <li>Auto ARIMA model</li>
+        </ul>
+    </p>
+    <h4 style="text-decoration: underline;">IMPLEMENTATION</h4>
+    <p class="text-faded" style="font-size: small;">
+        The Holt-Winter’s model, identified as the best-performing model, was applied to forecast truck sales for the next two years (2015 and 2016). The forecasted trends indicate a promising outlook for the sales trajectory.
+    </p>
+	<br>
+
+                  
+				<a href="https://github.com/Priyadarshini-Madhusudanan/Truck-Sales_Time-Series-Forecasting/blob/main/Truck%20Sales%20Forecasting.R" class="btn btn-custom btn-xl page-scroll" style="background-color: white; border-radius: 50px; color: #436bba;" target="_blank">View Code</a>
+
+				<section class="btn-custom" id="about" style="height: 100%">
+					<style>
+					.btn-custom {
+					background-color: #046C95;
+					border-color: #046C95;
+					color: #fff; /* Text color */
+				}
+
+				.btn-custom:hover,
+				.btn-custom:focus,
+				.btn-custom:active {
+					background-color: #046C95; /* Darker shade for hover, focus, and active states */
+					border-color: #046C95;
+				}
+					</style>
+				
+
+				</div>
+                <div class="col-lg-4 text-center" style="padding-top: 100px">
+                <img src="img/TruckSales/STL.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Sales of Trucks</p>
+                <img src="img/TruckSales/STL2.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Time Series Components</p>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #046C95;">
+        <div class="container">
+            <div class="row" class="call-to-action">
+                <div class="col-lg-8 col-lg-offset-2 text-center" style="color: #ffffff;">
+					<h2 class="section-heading">Get In Touch!</h2>
+						<hr class="primary">
+				</div>
+
+				<section class="btn-custom" id="about" >
+					<style>
+					.white-icon {
+    color: #ffffff; /* Clear white color code */
+}
+					</style>
+				
+				
+
+				
+                <div class="col-lg-2 col-lg-offset-3 text-center">
+                    <a href="https://github.com/Priyadarshini-Madhusudanan" class="fa fa-github fa-3x wow bounceIn white-icon"></a>
+                </div>
+                <div class="col-lg-2  text-center">
+                    <a href="https://www.linkedin.com/in/priyadarshini-madhu/" class="fa fa-linkedin fa-3x wow bounceIn white-icon"></a>
+                </div>
+                <!--div class="col-lg-1 text-center">
+                    <a class="fa fa-phone fa-3x wow bounceIn"></i>
+                </div-->
+                <div class="col-lg-2 text-center">
+                    <a href="mailto:priyamadhusudanan1@gmail.com" class="fa fa-envelope-o fa-3x wow bounceIn white-icon" data-wow-delay=".1s"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
