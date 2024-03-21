@@ -63,7 +63,12 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <section class="bg-primary" id="about">
+    <section class="bg-custom" id="about" style="height: 100%">
+	<style>
+    .bg-custom {
+        background-color: #436bba; /* Light blue color code */
+    }
+	</style>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center" style="text-align: left">
@@ -76,49 +81,53 @@
                     <p class="text-faded" style="font-size: small">
                     Adverse events are reported to the system VAERS. Obtained data from the Vaccine Adverse Event Reporting System (VAERS) website[Link: https://vaers.hhs.gov/data/datasets.html]
 					</p>
-                    <h4>APPROACH</h4>
+                   
+                    <h4>DATA PREPROCESSING</h4>
                     <p class="text-faded" style="font-size: small">
-                    Like mentioned earlier, the dataset consists of trip and fare data. Our initial ideas were to predict peak hours in  the city and predict traffic at  different times as a function of the average speed. After further analysis and discussion we concluded these problem statements are good visualization projects and we looked at more machine learning based problem statement.
-                    <br><br>
-                    Wait time Prediction
-                    Our next approach was to predict the wait time - the time a taxi driver has to wait in between trips. The dataset does not explicitly have the wait times. We would have had to derive the wait times between trips  from the pickup and dropoff timings and the passenger count information. We performed these data operations and figured out the dataset had 98% zero wait time and the rest of it was about an average of just one minute. Since the data was very skewed and since there was not much of a practical significance of the predicting wait time  problem we decided to try a explore the dataset with a slightly different angle. We found that our previous analysis could be leveraged to try and solve another challenging problem, that of tip prediction.
-                    <br><br>
-                    Tip Amount Prediction
-                    We wanted to predict the tip amount a driver is likely to receive. 
-                    Since we found the data to be skewed for wait times, we wanted to confirm that was not the case for tip amounts. We found 50% of the data had zero tip. So, we were safe here. Our generic approach was to visualize the data to understand it better. This would give us information about outliers and incorrect (absurd values) that need to be removed. Apart from data cleaning, the other important affordance of the visualizations is the correlation we can derive between the different attributes and the tip amount. 
-                    </p>
-                     <h4>ALGORITHMS USED</h4>
-                    <p class="text-faded" style="font-size: small">
-                    In order to analyze the Jeopardy data and generate insights out of it, we followed the a process that looked at the data using the following visualizations:
                     <ul class="text-faded" style="font-size: small">
-                        <li>
-                        Classification Models
-                            <ul>
-                                <li>Support Vector Machines</li>
-                                <li>Decision Trees</li>
-                                <li>Random Forests</li>
-                                <li>Adaboost</li>
-                            </ul>
-                        </li>
-                        <li>
-                        Regression Models
-                            <ul>
-                                <li>Linear Regression</li>
-                                <li>SVM Regression</li>
-                                <li>Lasso Regression</li>
-                            </ul>
-                        </li>
+                         <ul>
+                                <li>Handling Missing Values</li>
+                                <li>Encoding Categorical Variables</li>
+                                <li>Combining Rare Categories</li>
+                                <li>Target Variable Creation</li>
+								<li>Feature Selection</li>
+								<li>Oversampling using SMOTE</li>
+                         </ul>
+                        
+                        
                     </ul>
                     </p>
+					<h4>Multi-class Prediction: ML ALGORITHMS EMPLOYED</h4>
+                    <p class="text-faded" style="font-size: small">
+                    <ul class="text-faded" style="font-size: small">
+                         <ul>
+                                <li>Naive Bayes</li>
+                                <li>Logistic Regression</li>
+                                <li>Decision Trees</li>
+                                <li>XG Boost</li>
+								<li>LGBM</li>
+                         </ul>
+                        
+                        
+                    </ul>
+                    </p>
+					
+					<h4>INSIGHTS</h4>
+                    <p class="text-faded" style="font-size: small">
+                    Females are more prone to adverse events compared to males<br>
+					Age is a significant predictor. People above 40, should get the consultation of a doctor and proceed with the vaccination<br>
+					Sickness encounter from date of vaccination should be immediately addressed<br>
+					Percentage of adverse events for Pfizer was higher compared to Morderna and J&J <br>
+
+					
                    <a href="https://github.com/Priyadarshini-Madhusudanan/COVID-Vaccine_Multiclass-Classification/blob/main/COVID%20Vaccine_Multiclass_Final%20Code_With%20all%20Models.ipynb"class="btn btn-primary btn-xl page-scroll" target="_blank">View Code</a>
                 </div>
                 <div class="col-lg-4 text-center" style="padding-top: 100px">
-                <img src="img/nyce/nyce1.png" class="img-responsive" alt="" style="margin :auto">
+                <img src="img/nyce/Gender_Impacts.png" class="img-responsive" alt="" style="margin :auto">
                 <p>Visualizations</p>
-                <img src="img/nyce/nyce2.png" class="img-responsive" alt="" style="margin :auto">
-                <p>Correlations</p>
-                <img src="img/nyce/nyce3.png" class="img-responsive" alt="" style="margin :auto">
-                <p>Confusion Matrix</p>
+                <img src="img/nyce/Feature.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Feature Importance and Target Variable Distribution</p>
+                
                 </div>
             </div>
         </div>
